@@ -142,7 +142,7 @@ fun MemoryScreen(
                     horizontalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = "You have won!\nScore: ${state.clickCount} clicks",
+                        text = "你赢了!\n点击${state.clickCount}次",
                         color = Color.Black,
                         fontSize = 30.sp,
                         lineHeight = 38.sp,
@@ -159,7 +159,7 @@ fun MemoryScreen(
                     IconButton(
                         onClick = { viewModel.onEvent(MemoryEvent.ResetGame) },
                         icon = Icons.Default.Refresh,
-                        contentDescription = "Reset Game Button",
+                        contentDescription = "重新开始游戏",
                         tint = state.currentTheme.iconColor,
                         modifier = modifier
                     )

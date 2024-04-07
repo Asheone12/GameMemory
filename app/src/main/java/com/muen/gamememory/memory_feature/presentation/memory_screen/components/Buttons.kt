@@ -32,21 +32,21 @@ fun BuildButtons(
     IconButton(
         onClick = { viewModel.onEvent(MemoryEvent.AddPair) },
         icon = Icons.Default.KeyboardArrowUp,
-        contentDescription = "Add pair button",
+        contentDescription = "增加对数按钮",
         tint = state.currentTheme.iconColor,
         modifier = modifier
     )
     IconButton(
         onClick = { viewModel.onEvent(MemoryEvent.ReducePairs) },
         icon = Icons.Default.KeyboardArrowDown,
-        contentDescription = "Reduce pairs button",
+        contentDescription = "减少对数按钮",
         tint = state.currentTheme.iconColor,
         modifier = modifier
     )
     IconButton(
         onClick = { viewModel.onEvent(MemoryEvent.ResetGame) },
         icon = Icons.Default.Refresh,
-        contentDescription = "Reset Game button",
+        contentDescription = "重新开始游戏按钮",
         tint = state.currentTheme.iconColor,
         modifier = modifier
     )
@@ -58,7 +58,7 @@ fun BuildButtons(
         ) {
             Image(
                 painter = painterResource(id = state.currentTheme.getImageResourceForNumber(1)!!),
-                contentDescription = "Switch Theme",
+                contentDescription = "变更主题",
                 modifier = Modifier.fillMaxSize(),
                 contentScale = ContentScale.Fit
             )
