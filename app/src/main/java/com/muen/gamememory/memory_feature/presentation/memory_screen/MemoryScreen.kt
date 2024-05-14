@@ -60,7 +60,7 @@ fun MemoryScreen(
                 Column(
                     modifier = Modifier
                         .fillMaxSize()
-                        .padding(top = 18.dp),
+                        .padding(top = 32.dp),
                     verticalArrangement = Arrangement.SpaceBetween,
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
@@ -75,9 +75,9 @@ fun MemoryScreen(
                     }
                     Row(
                         modifier = Modifier
-                            .weight(.5f)
+                            .weight(0.8f)
                             .fillMaxWidth()
-                            .padding(top = 4.dp, bottom = 4.dp),
+                            .padding(horizontal = 12.dp),
                         verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
