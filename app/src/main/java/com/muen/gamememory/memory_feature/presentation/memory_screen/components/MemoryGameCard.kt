@@ -73,7 +73,7 @@ fun MemoryGameCard(
                 )
                 Text(
                     text = "?",
-                    fontSize = 40.sp,
+                    fontSize = 35.sp,
                     fontWeight = FontWeight.ExtraBold,
                     color = state.currentTheme.textColor,
                     style = TextStyle(
